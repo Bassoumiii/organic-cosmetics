@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>HOME</title>
+      
+      <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <style>
+   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background:rgba(37, 172, 37, 0.575);;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color:#fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color:black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: rgba(37, 172, 37, 0.575);;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background: lightgreen;
+    height: 100vh;
+    width: 300px;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+   margin-left: 1150px;
+    
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -5%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-align: center;
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: #fff;
+  }
+}
+    h1{
+            color:rgba(37, 172, 37, 0.575);
+            
+         }
+         p{
+            font-family: 'poppins', sans-serif;
+            font-weight: bold;}
+         button{
+            width: 180px;
+            color:beige; 
+            font-size: 15px;
+            padding: 10px 0;
+             background:rgba(37, 172, 37, 0.575);
+            border: 0;
+            border-radius: 20px;
+            outline: none;
+            margin-top: 10px;
+            font-family: "poppins",sans-serif;
+         }
+         a{
+            position: relative;
+            text-decoration: none;
+            font-family:'poppins', sans-serif;
+            color: black;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            padding: 0px 10px;
+            
+         }
+         a ::after{
+            content: "";
+            position: absolute;
+            background-color: rgba(37, 172, 37, 0.575);
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+         }
+         a:hover::after{
+            width: 100%;}
+         .prg{
+            margin-left: 80px;
+            margin-top: 170px;
+         } 
+         .btn-shop{
+            color: #fff;
+         }
+         .btn-shop:hover{
+            color:black;}
+    .content{
+        margin-left: 50px;
+        margin-top: 170px;
+    }
+    body{
+      background-image: url(fond.webp);
+        background-repeat: no-repeat;
+        background-size: cover ;
+      background-position: 69%;
+      background-attachment: fixed; 
+      height:100vh;
+     }
+     footer{
+            background-color:transparent;
+            height: 10vh;
+            margin-top: 160px;
+         }
+         .foot{
+            text-align: center;
+            line-height: 10vh;
+         }
+         .fot{
+            text-decoration: none;
+            color: rgba(37, 172, 37, 0.575);
+            font-weight: bold;
+         }
+         .fot:hover{
+          color: rgb(62, 158, 66);
+         }
+</style>
+   <body>
+    
+      <nav>
+         <div class="logo">
+            BK Organic Cosmetics
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a  href="file:///C:/Users/hp/Desktop/my%20project/HOME.html">Home</a></li>
+            <li><a href="file:///C:/Users/hp/Desktop/my%20project/Contact%20us.html">Contact us</a></li>
+            <li><a href="file:///C:/Users/hp/Desktop/my%20project/ABOUT%20US.html">About us</a></li>
+            <li><a href="file:///C:/Users/hp/Desktop/my%20project/JOIN%20US.html">Join us</a></li>
+         </ul>
+      </nav>
+      <div class="content">
+         <div>
+            <h1>Happiness is having natural beauty</h1> 
+               <p> Life shouldn't be serious but skincare should!<br>Stay home and shop online! You're too pretty to look for a parking spot.<br>
+               Discover our products, some advices to have a soft skin, and more.</p>
+               <button type="button" class="shop-btn"><a href="file:///C:/Users/hp/Desktop/my%20project/SHOP%20NOW.html" class="btn-shop"> Shop now!</a></button>
+         </div>
+         
+      </div>
+      <footer>
+        <p class="foot">Copyrights at<a  class="fot" href="file:///C:/Users/hp/Desktop/my%20project/HOME.html" >BK Organic Cosmetics</a></p>
+     </footer>             
+  
+   </body>
+</html>
